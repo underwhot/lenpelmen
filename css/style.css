@@ -1409,6 +1409,7 @@ body::after {
 }
 
 .novelty__slide {
+  outline: none;
   position: relative;
 }
 
@@ -1433,6 +1434,7 @@ body::after {
 }
 
 .novelty__heart {
+  display: inline-block;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -1571,6 +1573,7 @@ body::after {
 }
 
 .hits__slide {
+  outline: none;
   position: relative;
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
@@ -1612,6 +1615,8 @@ body::after {
 }
 
 .hits__heart {
+  cursor: pointer;
+  display: block;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -2930,6 +2935,12 @@ body::after {
 
   .subscribe__action {
     bottom: -70px;
+  }
+}
+
+@media (max-width: 26.25em) {
+  .hits__wrapper {
+    min-height: 42.5rem;
   }
 }
 
